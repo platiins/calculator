@@ -64,7 +64,7 @@ body {
   color: #424242;
 }
 
-.high-math-grid-container {
+.functions-container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -72,8 +72,7 @@ body {
   gap: 15px;
 }
 
-.high-math-grid-container p {
-  display: inline-block;
+.functions-container button {
   width: 90px;
   background-color: #ffecfc;
   border: solid 4px #000000;
@@ -81,4 +80,25 @@ body {
   color: #f566be;
   font-size: 25px;
   text-align: center;
+}
+
+.numbers-grid-container {
+  display: grid;
+  grid-template-areas:
+    "symb-btn symb-btn symb-btn"
+    "nmbr-btn nmbr-btn nmbr-btn"
+    "nmbr-btn nmbr-btn nmbr-btn"
+    "zero-btn symb-btn";
+}
+
+.nmbr-btn {
+  grid-area: nmbr-btn;
+}
+
+.zero-btn {
+  grid-area: zero-btn;
+}
+
+.symb-btn {
+  grid-area: symb-btn;
 }
