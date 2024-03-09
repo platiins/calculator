@@ -16,6 +16,16 @@
       crossorigin="anonymous"
     />
     <script src="./js/script.js" type="text/javascript"></script>
+    <!--
+      linked icons from FONT AWESOME
+    -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +41,9 @@
       <section class="calc-main-container">
         <div class="bg-img">
           <section class="result-field">
-            <p class="calculation-p">6000/2+3227*2</p>
+            <p class="calculation-p">
+              6000<span>/</span>2<span>+</span>3227<span>*</span>2
+            </p>
             <p class="result-p">=12,454</p>
           </section>
           <section class="functions-container">
@@ -41,20 +53,26 @@
             <button type="button">deg</button>
           </section>
           <section class="numbers-grid-container">
-            <button type="button" class="symb-btn">Ac</button>
-            <button type="button" class="symb-btn">i</button>
-            <button type="button" class="symb-btn">/</button>
-            <button type="button" class="nmbr-btn">7</button>
-            <button type="button" class="nmbr-btn">8</button>
-            <button type="button" class="nmbr-btn">9</button>
-            <button type="button" class="nmbr-btn">4</button>
-            <button type="button" class="nmbr-btn">5</button>
-            <button type="button" class="nmbr-btn">6</button>
-            <button type="button" class="nmbr-btn">1</button>
-            <button type="button" class="nmbr-btn">2</button>
-            <button type="button" class="nmbr-btn">3</button>
-            <button type="button" class="zero-btn">0</button>
-            <button type="button" class="symb-btn">.</button>
+            <button type="button" class="ac">Ac</button>
+            <button type="button" class="delete light-pink-bg">
+              <img src=".//images/carbon_delete.svg" alt="delete" />
+            </button>
+            <button type="button" class="dash dark-pink-bg">/</button>
+            <button type="button" class="star dark-pink-bg">*</button>
+            <button type="button" class="seven light-pink-bg">7</button>
+            <button type="button" class="eight light-pink-bg">8</button>
+            <button type="button" class="nine light-pink-bg">9</button>
+            <button type="button" class="minus dark-pink-bg">-</button>
+            <button type="button" class="four light-pink-bg">4</button>
+            <button type="button" class="five light-pink-bg">5</button>
+            <button type="button" class="six light-pink-bg">6</button>
+            <button type="button" class="plus dark-pink-bg">+</button>
+            <button type="button" class="one light-pink-bg">1</button>
+            <button type="button" class="two light-pink-bg">2</button>
+            <button type="button" class="three light-pink-bg">3</button>
+            <button type="button" class="zero light-pink-bg">0</button>
+            <button type="button" class="dot light-pink-bg">.</button>
+            <button type="button" class="equal">=</button>
           </section>
         </div>
       </section>

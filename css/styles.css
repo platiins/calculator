@@ -15,53 +15,61 @@ body {
 
 #page-content {
   position: relative;
+  top: 100px;
+  left: 100px;
 }
 
 .calc-main-container {
-  width: 580px;
-  height: 740px;
+  width: 941px;
+  height: 1314px;
   border-radius: 40px;
   background-color: transparent;
-  border: solid 20px #d748a0;
+  border: solid 36px #d748a0;
   overflow: hidden;
   position: relative;
+  box-sizing: content-box;
+  background-color: #d748a0;
+  z-index: -3;
 }
 
 .bg-img {
-  background-image: url(../images/hello-kitty-calc.jpeg);
+  background-image: url(../images/hallo-kitty.png);
   width: 100%;
   height: 100%;
   z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 36px;
 }
 
 .result-field {
   background-color: #ffecfc;
+  height: 160px;
   border: solid 5px #000000;
   border-radius: 30px;
-  margin: 50px 40px 20px;
+  margin: 110px 85px 45px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: end;
-  padding: 10px 30px;
-}
-
-.result-field p {
-  margin-bottom: 0;
-  color: #424242;
+  padding: 32px 50px 18px 0;
 }
 
 .calculation-p {
-  font-size: 15px;
-  color: #424242;
+  font-size: 24px;
+  color: #818181;
+  margin-bottom: 0;
+}
+
+.calculation-p span {
+  color: #f566be;
 }
 
 .result-p {
-  font-size: 30px;
+  font-size: 48px;
   color: #424242;
+  margin-bottom: 0;
 }
 
 .functions-container {
@@ -69,36 +77,105 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: start;
-  gap: 15px;
+  gap: 25px;
 }
 
 .functions-container button {
-  width: 90px;
+  width: 144px;
+  height: 64px;
   background-color: #ffecfc;
   border: solid 4px #000000;
   border-radius: 15px;
   color: #f566be;
-  font-size: 25px;
+  font-size: 36px;
   text-align: center;
 }
 
 .numbers-grid-container {
   display: grid;
-  grid-template-areas:
-    "symb-btn symb-btn symb-btn"
-    "nmbr-btn nmbr-btn nmbr-btn"
-    "nmbr-btn nmbr-btn nmbr-btn"
-    "zero-btn symb-btn";
+  grid-template-columns: repeat(4, 144px);
+  grid-template-rows: repeat(5, 144px);
+  gap: 25px;
+  justify-content: center;
+  margin-top: 25px;
 }
 
-.nmbr-btn {
-  grid-area: nmbr-btn;
+.ac {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #ffecfc;
+  color: rgba(0, 0, 0, 0.5);
+}
+.delete {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.dash {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.star {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.seven {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.eight {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.nine {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.minus {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.four {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.five {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.six {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.plus {
+  grid-area: 3 / 4 / 4 / 5;
+  height: 228px;
+}
+.one {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.two {
+  grid-area: 4 / 2 / 5 / 3;
+}
+.three {
+  grid-area: 4 / 3 / 5 / 4;
+}
+.zero {
+  grid-area: 5 / 1 / 6 / 3;
+}
+.dot {
+  grid-area: 5 / 3 / 6 / 4;
+}
+.equal {
+  grid-area: 4 / 4 / 6 / 5;
+  height: 228px;
+  margin-top: 85px;
+  background-color: #ff1fa9;
 }
 
-.zero-btn {
-  grid-area: zero-btn;
+/* BTN STYLE HELPER CLASSES */
+
+.numbers-grid-container button {
+  font-size: 48px;
+  text-align: center;
+  border: #000000 solid 5px;
+  border-radius: 20px;
 }
 
-.symb-btn {
-  grid-area: symb-btn;
+.light-pink-bg {
+  background-color: #ffecfc;
+  color: #000000;
+}
+
+.dark-pink-bg {
+  background-color: #f566be;
+  color: #000000;
 }
