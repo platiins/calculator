@@ -5,6 +5,12 @@
   font-style: normal;
 }
 
+/* 
+- add pointer to all btns
+- remove unnnnecessary styling 
+- try to style error "meow" and final calculation result
+*/
+
 body {
   font-family: "Quantico", sans-serif;
   font-weight: 400;
