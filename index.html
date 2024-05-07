@@ -7,28 +7,17 @@
     <meta name="keywords" content="calculator, hello-kitty, pink, girl, math" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CALCULATOR</title>
-    <link rel="stylesheet" href="/css/reset.css" type="text/css" />
-    <script src="./js/script.js" type="text/javascript"></script>
+    <!-- <link rel="stylesheet" href="/css/reset.css" type="text/css" /> -->
     <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header id="page-header"></header>
     <main id="page-content">
-      <section class="calc-main-container">
+      <section class="calc-main-container calculator">
         <div class="bg-img">
-          <section class="result-field">
-            <p class="calculation-p">
-              6000<span>/</span>2<span>+</span>3227<span>*</span>2
-            </p>
-            <p class="result-p">=12,454</p>
-          </section>
-          <section class="functions-container">
-            <button type="button">e</button>
-            <button type="button">µ</button>
-            <button type="button">sin</button>
-            <button type="button">deg</button>
-          </section>
-          <section class="numbers-grid-container">
+          <input type="text" id="display" class="result-field" readonly />
+          <div class="numbers-grid-container keys">
             <button type="button" class="ac">Ac</button>
             <button type="button" class="delete light-pink-bg">
               <img src=".//images/carbon_delete.svg" alt="delete" />
@@ -49,7 +38,7 @@
             <button type="button" class="zero light-pink-bg">0</button>
             <button type="button" class="dot light-pink-bg">.</button>
             <button type="button" class="equal">=</button>
-          </section>
+          </div>
         </div>
       </section>
     </main>
