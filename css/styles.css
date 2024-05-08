@@ -1,18 +1,6 @@
 @font-face {
-  font-family: Quantico;
-  src: url("../assets/fonts/Quantico/Quantico-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* 
-- add pointer to all btns
-- remove unnnnecessary styling 
-- try to style error "meow" and final calculation result
-*/
-
-body {
   font-family: "Quantico", sans-serif;
+  src: url(../assets/fonts/Quantico/Quantico-Regular.ttf) format(truetype);
   font-weight: 400;
   font-style: normal;
 }
@@ -28,11 +16,10 @@ body {
   height: 1314px;
   border-radius: 40px;
   border: solid 36px #d748a0;
+  background-color: #d748a0;
   overflow: hidden;
   position: relative;
   box-sizing: content-box;
-  background-color: #d748a0;
-  /* z-index: -3;  */
 }
 
 .bg-img {
@@ -50,19 +37,25 @@ body {
   align-items: center;
 }
 
+/* result display input */
+
 .result-field {
   background-color: #ffecfc;
-  height: 160px;
+  height: 200px;
   width: 700px;
   border: solid 5px #000000;
   border-radius: 30px;
   margin-bottom: 60px;
   padding: 20px 50px;
-  font-size: 40px;
+  font-size: 50px;
+  font-family: "Quantico";
+  font-weight: 400;
   color: #000000;
   text-align: end;
   box-sizing: border-box;
 }
+
+/* GRID */
 
 .numbers-grid-container {
   display: grid;
@@ -73,13 +66,14 @@ body {
   margin-top: 25px;
 }
 
-.ac {
+#ac {
   grid-area: 1 / 1 / 2 / 2;
-  background-color: #ffecfc;
   color: rgba(0, 0, 0, 0.5);
+  font-size: 40px;
 }
 .delete {
   grid-area: 1 / 2 / 2 / 3;
+  font-size: 30px;
 }
 .dash {
   grid-area: 1 / 3 / 2 / 4;
@@ -134,21 +128,42 @@ body {
   background-color: #ff1fa9;
 }
 
-/* BTN STYLE HELPER CLASSES */
+/* BTNS STYLE  */
 
 .numbers-grid-container button {
   font-size: 48px;
   text-align: center;
   border: #000000 solid 5px;
   border-radius: 20px;
+  cursor: pointer;
+  color: #000000;
+  font-family: "Quantico";
+  font-weight: 400;
+}
+
+.delete-img {
+  width: 50px;
 }
 
 .light-pink-bg {
   background-color: #ffecfc;
-  color: #000000;
 }
 
 .dark-pink-bg {
   background-color: #f566be;
-  color: #000000;
+}
+
+.light-pink-bg:hover {
+  border: #ffecfc solid 5px;
+  box-shadow: 0 0 50px #ffecfc;
+}
+
+.dark-pink-bg:hover {
+  border: #f566be solid 5px;
+  box-shadow: 0 0 50px #f566be;
+}
+
+.equal:hover {
+  border: #ff1fa9 solid 5px;
+  box-shadow: 0 0 50px #ff1fa9;
 }

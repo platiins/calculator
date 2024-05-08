@@ -75,7 +75,6 @@ dot.addEventListener("click", function () {
 });
 
 // calculate result
-
 equal.addEventListener("click", function () {
   try {
     let result = eval(expression);
@@ -83,16 +82,17 @@ equal.addEventListener("click", function () {
     expression = "";
   } catch (error) {
     display.value = "meow";
+    console.log("error // wrong expression entered");
   }
 });
 
-// clear all
-
+// AC - all clear
 ac.addEventListener("click", function () {
   expression = "";
   display.value = "";
 });
 
+// CE - clear entry
 del.addEventListener("click", () => {
   expression = expression.slice(0, -1);
   display.value = expression;

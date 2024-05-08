@@ -7,7 +7,7 @@
     <meta name="keywords" content="calculator, hello-kitty, pink, girl, math" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CALCULATOR</title>
-    <!-- <link rel="stylesheet" href="/css/reset.css" type="text/css" /> -->
+    <link rel="stylesheet" href="/css/reset.css" type="text/css" />
     <link rel="stylesheet" href="./css/styles.css" type="text/css" />
     <script src="./js/script.js" defer></script>
   </head>
@@ -17,10 +17,10 @@
       <section class="calc-main-container calculator">
         <div class="bg-img">
           <input type="text" id="display" class="result-field" readonly />
-          <div class="numbers-grid-container keys">
-            <button type="button" class="ac">Ac</button>
+          <div class="numbers-grid-container">
+            <button type="button" id="ac" class="ac light-pink-bg">AC</button>
             <button type="button" class="delete light-pink-bg">
-              <img src=".//images/carbon_delete.svg" alt="delete" />
+              <img class="delete-img" src=".//images/carbon_delete.svg" alt="delete" />
             </button>
             <button type="button" class="dash dark-pink-bg">/</button>
             <button type="button" class="star dark-pink-bg">*</button>
